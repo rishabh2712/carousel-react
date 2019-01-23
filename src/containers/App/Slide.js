@@ -6,6 +6,7 @@ import {
   CarouselIndicators,
   CarouselCaption
 } from 'reactstrap';
+import {numbers} from './config'
 
 class Slide extends Component {
   constructor(props) {
@@ -79,7 +80,7 @@ class Slide extends Component {
                     onExiting={this.onExiting}
                     onExited={this.onExited}
                 >
-                    <CarouselCaption className="text-danger" captionHeader={item} />
+                    <CarouselCaption className="text-danger" captionHeader={numbers[item]} />
                 </CarouselItem>    
             )}
           <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
