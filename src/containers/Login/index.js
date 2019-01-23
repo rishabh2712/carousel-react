@@ -53,7 +53,7 @@ class Login extends Component {
   submitForm(e) {
     e.preventDefault();
     if(this.validateInput()) {
-     this.props.history.push('/app') 
+     this.props.history.push('/shaadi-assignment/app') 
     }
   }
 
