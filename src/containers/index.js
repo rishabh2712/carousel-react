@@ -8,6 +8,7 @@ import {
     Switch,
     withRouter,
     BrowserRouter as Router,
+
   } from 'react-router-dom';
 import Login from './Login'
 import App from './App'
@@ -33,4 +34,4 @@ const mapDispatchToProps = {
   
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(AppContainer)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AppContainer))
