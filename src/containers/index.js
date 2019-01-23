@@ -18,7 +18,7 @@ export class AppContainer extends Component {
     return (
         <Switch> 
             <Route path = '/shaadi-assignment/app' component = {App} />
-            <Route exact path = '/shaadi-assignment/login' component = {Login} />
+            <Route path = '/shaadi-assignment/login' component = {Login} />
             <Redirect from='/shaadi-assignment' to ='/shaadi-assignment/login' />
         </Switch>
     )
