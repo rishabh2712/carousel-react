@@ -15,23 +15,20 @@ import App from './App'
 
 export class AppContainer extends Component {
 
+  componentDidMount() {
+    this.props.history.push('/login')
+  }
+
   render() {
     return (
         <Switch> 
-            <Route path = '/shaadi-assignment/app' component = {App} />
-            <Route path = '/shaadi-assignment/login' component = {Login} />
-            <Redirect from='/shaadi-assignment' to ='/shaadi-assignment/login' />
+            <Route path = '/' exact component = {App} />
+            <Route path = '/login' exact component = {Login} />
+            {/* <Redirect from='/shaadi-assignment' to ='/shaadi-assignment/login' /> */}
         </Switch>
     )
   }
 }
 
-const mapStateToProps = (state) => ({
-  
-})
 
-const mapDispatchToProps = {
-  
-}
-
-export default withRouter(connect(mapStateToProps, mapDispatchToProps)(AppContainer))
+export default withRouter(AppContainer)

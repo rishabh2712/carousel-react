@@ -53,14 +53,12 @@ class Login extends Component {
   submitForm(e) {
     e.preventDefault();
     if(this.validateInput()) {
-     this.props.history.push('/shaadi-assignment/app') 
+     this.props.history.push('/') 
     }
   }
 
   render() {
-    const { email, password } = this.state;
-    console.log(this.state);
-    
+    const { email, password } = this.state
     return (
       <Container className="App">
         <h2>Sign In</h2>

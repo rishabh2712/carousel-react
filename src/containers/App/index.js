@@ -71,7 +71,7 @@ class App extends Component {
           marginBottom: '1em', marginTop: '1em'
         }}>
           <DropdownToggle caret>
-            {this.state.value || 'Select Slides'}
+            {this.state.value ? this.state.value : 'Select Slides'}
           </DropdownToggle>
           <DropdownMenu>
             {this.dropdownContent()}
@@ -88,12 +88,11 @@ class App extends Component {
           </Button>
         }
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
+          <ModalHeader toggle={this.toggle}>User Activity</ModalHeader>
           <ModalBody>
             {modalContent()}
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
             <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
