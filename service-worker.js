@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/shaadi-assignment/precache-manifest.4f855cf6fd73dca85ccbb3bfb313537b.js"
+  "/carousel-react/precache-manifest.22a9b3428e7efe9d22c6dff81c7406e7.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/shaadi-assignment/index.html", {
+workbox.routing.registerNavigationRoute("/carousel-react/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
